@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# The H.A.R.D. Restaurant Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### A full stack web app designed to provide restaurant recommendations in Houston, Austin, Raleigh, and Detroit.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The H.A.R.D. Restaurant Tracker provides users the ability to view recommended restaurants in one of the four metropolitan areas corresponding to each of the developers.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Technologies Used](#technologiesused)
+- [Features](#features)
+- [Design](#design)
+- [Project Next Steps](#nextsteps)
+- [Deployed App](#deployment)
+- [About the Authors](#authors)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## <a name="technologiesused"></a>Technologies Used
 
-### `npm test`
+- HTML5
+- CSS3
+- JavaScript
+- Express.js
+- Node.Js
+- MongoDB
+- React.js
+- RESTful Routes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Users can view recommended restaurants in Houston, TX, Austin, TX, Raleigh, NC, and Detroit, MI
+- Users can view basic information regarding each of the recommended restaurants including (address, phone, website, Yelp rating, Google rating, etc.) in additional to comments provided by the contributor
+- Authenticated users can add their own recommendations
+- Authenticated users can also edit or delete any of their previous contributions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- ## Whiteboard Images
+* All Sketches are on notepad -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Trello Planning
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Link to Trello: [insert link here]
 
-### `npm run eject`
+## <a name="design"></a>Design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- TBD
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## <a name="nextsteps"></a>Project Next Steps
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Users have the ability to view a personalized dashboard containing their individual contributions as well as their starred/favorited posts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## <a name="deployment"></a>Deployed Link
 
-## Learn More
+- TBD
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- You can view the repository:
+  [Github.com]([insert link here])
+- If unable to view please go live locally through VS Code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Works Cited:
 
-### Code Splitting
+- TBD
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## <a name="authors"></a>About The Authors
 
-### Analyzing the Bundle Size
+### Irving
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-
 
-### Making a Progressive Web App
+### Jake
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-
 
-### Advanced Configuration
+### KriShauna
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-
 
-### Deployment
+### Dave
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-
