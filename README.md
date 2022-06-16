@@ -46,7 +46,7 @@ The H.A.R.D. Restaurant Tracker provides users the ability to view recommended r
 
 ## E.R.D.
 
-- <a href="https://www.figma.com/file/YbjixReL6we26Vy1IZOLpi/H.A.R.D-Meal-Erd?node-id=0%3A1">Link to E.R.D.</a>
+- <a href="https://www.figma.com/file/YbjixReL6we26Vy1IZOLpi/H.A.R.D-Meal-Erd?node-id=0%3A1">E.R.D.</a>
 
 <!-- ## <a name="design"></a>Design
 
@@ -73,7 +73,7 @@ The H.A.R.D. Restaurant Tracker provides users the ability to view recommended r
 
 ### Irving
 
-- <a href="https://github.com/jakerwalton/">GitHub</a>
+- <a href="https://github.com/irv302">GitHub</a>
 - <a href="https://www.linkedin.com/in/irving-perez-a9740523b/">LinkedIn</a>
 
 ### Jake
