@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 // Pages
-import Home from "./pages/Home";
+
 import Austin from './pages/Austin';
 import Detroit from './pages/Detroit';
 import Houston from './pages/Houston';
