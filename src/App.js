@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 // Pages
-
+import Home from "./pages/Home";
 import Austin from './pages/Austin';
 import Detroit from './pages/Detroit';
 import Houston from './pages/Houston';
@@ -17,31 +17,37 @@ import './App.css';
 
 
 function App() {
-  const URL =""; // Back-end Heroku link
+
+  const URL ="https://project-3-backend-hard.herokuapp.com/"; // Back-end Heroku link
 
   return (
     <div className="App">
       <Header />
       <Switch>
-        
+
+      {/* Home Route */}
+        <Route exact path="/">
+          <Home URL={URL}/>
+        </Route>
+      
       {/* Austin Route */}
         <Route exact path="/austin">
-          <Austin />
+          <Austin URL={URL}/>
         </Route>
       
       {/* Detroit Route */}
         <Route exact path="/detroit">
-          <Detroit />
+          <Detroit URL={URL}/>
         </Route>
       
       {/* Houston Route */}
         <Route exact path="/houston">
-          <Houston />
+          <Houston URL={URL}/>
         </Route>
       
       {/* Raleigh Route */}
         <Route exact path="/raleigh">
-          <Raleigh />
+          <Raleigh URL={URL}/>
         </Route>
       
       </Switch>
