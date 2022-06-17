@@ -23,12 +23,7 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-      
-      {/* Home Route */}
-        <Route exact path="/">
-          <Home />
-        </Route>
-      
+        
       {/* Austin Route */}
         <Route exact path="/austin">
           <Austin />
