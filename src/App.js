@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header className="header"/>
       <Switch>
 
       {/* Home Route */}
@@ -51,7 +51,7 @@ function App() {
         </Route>
       
       </Switch>
-      <Footer />
+      <Footer className="footer"/>
     </div>
   );
 }

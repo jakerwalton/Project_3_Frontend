@@ -1,22 +1,26 @@
+// React
 import { Link } from "react-router-dom";
+
+// Stylesheet
+import '../App.css';
 
 function Header(props) {
     return (
-        <nav className="nav">
+        <nav className="header">
             <Link to="/">
-                <div>Home</div>
+                <button>Home</button>
             </Link>
             <Link to="/austin">
-                <div>Austin</div>
+                <button>Austin</button>
             </Link>
             <Link to="/detroit">
-                <div>Detroit</div>
+                <button>Detroit</button>
             </Link>
             <Link to="/houston">
-                <div>Houston</div>
+                <button>Houston</button>
             </Link>
             <Link to="/raleigh">
-                <div>Raleigh</div>
+                <button>Raleigh</button>
             </Link>
         </nav>
     );
