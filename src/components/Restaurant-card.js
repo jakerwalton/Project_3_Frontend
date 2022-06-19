@@ -1,18 +1,24 @@
 import React from "react";
+import { Link } from "react";
 
 // Cards
 function Card(props) {
-  return (
-    <div className="info">
-      {/* <img className="pic" src={props.image}></img>
-      <div className="card-body">
-      <h1 className="card-title">{props.name}hello</h1>
-      <p>{props.cuisine[0]}</p>
-      <p className="card-text">{props.userRating}</p> */}
-      <button className="card_button">SUBMIT</button>
-    </div>
-    // </div>
-  );
+  const loaded = () => {
+    return props.restaurants.map((restaurant) => (
+      <div key={restaurant._id} className="restaurant">
+        <h2>{restaurant.name}</h2>
+        <h3>{restaurant.cuisine[0]}</h3>
+        <h4>{restaurant.userRating} / 5</h4>
+        <p>Reviewed by: {restaurant.user}</p>
+      </div>
+    ));
+  };
+
+  const loading = () => {
+    return <h1>Loading...</h1>;
+  };
+
+  return props.restaurants ? loaded() : loading();
 }
 
 export default Card;
