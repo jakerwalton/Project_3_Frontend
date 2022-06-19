@@ -1,7 +1,6 @@
 import React from "react";
 
-
-// Cards 
+// Cards
 function Card(props) {
   return (
     <div className="info">
@@ -10,8 +9,8 @@ function Card(props) {
       <h1 className="card-title">{props.name}hello</h1>
       <p>{props.cuisine[0]}</p>
       <p className="card-text">{props.userRating}</p> */}
-      <button className="card_button"/>home<button/>
-        </div>
+      <button className="card_button">SUBMIT</button>
+    </div>
     // </div>
   );
 }
