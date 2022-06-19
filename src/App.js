@@ -2,8 +2,9 @@
 import { Route, Switch } from "react-router-dom"
 
 // Components
-import Header from './components/Header';
+import Nav from './components/Nav';
 import Footer from './components/Footer';
+import Header from "./components/Header";
 
 // Pages
 import Home from "./pages/Home";
@@ -21,7 +22,9 @@ function App() {
   const URL ="https://project-3-backend-hard.herokuapp.com/"; // Back-end Heroku link
 
   return (
+
     <div className="App">
+      <Nav />
       <Header className="header"/>
       <Switch>
 

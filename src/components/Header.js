@@ -1,29 +1,11 @@
-// React
-import { Link } from "react-router-dom";
-
-// Stylesheet
-import '../App.css';
+import Nav from "./Nav";
 
 function Header(props) {
     return (
-        <nav className="header">
-            <Link to="/">
-                <button>Home</button>
-            </Link>
-            <Link to="/austin">
-                <button>Austin</button>
-            </Link>
-            <Link to="/detroit">
-                <button>Detroit</button>
-            </Link>
-            <Link to="/houston">
-                <button>Houston</button>
-            </Link>
-            <Link to="/raleigh">
-                <button>Raleigh</button>
-            </Link>
-        </nav>
+      <div className="header">
+        <h1>Header</h1>
+      </div>
     );
-};
+  }
   
   export default Header;
