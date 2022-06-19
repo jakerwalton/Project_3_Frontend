@@ -6,7 +6,7 @@ import Card from "../components/Restaurant-card";
 function Detroit(props) {
   const [restaurants, setRestaurants] = useState(null);
 
-  const URL = "https://project-3-backend-hard.herokuapp.com/detroit";
+  const URL = "https://project-3-backend-hard.herokuapp.com/detroit/";
 
   const getDetroitRestaurants = async () => {
     const response = await fetch(URL);
@@ -21,7 +21,9 @@ function Detroit(props) {
   return (
     <div>
       <h1>The Detroit Page</h1>
-      <Card restaurants={restaurants} />
+      <div className="card-container">
+        <Card restaurants={restaurants} />
+      </div>
     </div>
   );
 }
