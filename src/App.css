@@ -37,12 +37,25 @@
   }
 }
 
-.header {
+.nav {
+  background-color: rgb(155, 244, 155);
   display: flex;
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
 }
+.links {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+  a {
+    color: orangered;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    
+    }
 
 .footer {
   position: absolute;

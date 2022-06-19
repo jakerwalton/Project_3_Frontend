@@ -1,17 +1,19 @@
 import React from "react";
 
-function Restaurant(props) {
+
+// Cards 
+function Card(props) {
   return (
     <div className="info">
-      <img className="pic" src={props.img}></img>
+      {/* <img className="pic" src={props.image}></img>
       <div className="card-body">
-      <h1 className="card-title">{props.name}</h1>
+      <h1 className="card-title">{props.name}hello</h1>
       <p>{props.cuisine[0]}</p>
-      <p className="card-text">{props.userRating}</p>
-      <Button />
+      <p className="card-text">{props.userRating}</p> */}
+      <button className="card_button"/>home<button/>
         </div>
-    </div>
+    // </div>
   );
 }
 
-export default Restaurant;
+export default Card;

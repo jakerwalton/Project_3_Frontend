@@ -1,6 +1,13 @@
+import React from "react";
+
+import Card from "../components/Restaurant-card";
+
 function Houston(props) {
     return (
-        <h1>The Houston Page</h1>
+        <div>
+        <h1>The Houston's Page</h1>
+        <Card />
+        </div>
     );
 };
 
