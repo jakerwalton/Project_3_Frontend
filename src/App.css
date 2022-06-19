@@ -49,16 +49,29 @@
   list-style-type: none;
   gap: 2rem;
 }
-  a {
-    color: orangered;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    
-    }
+a {
+  color: orangered;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
 
 .footer {
+  background-color: #61dafb;
+  opacity: 50%;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+.card-container {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.restaurant-card-image {
+  max-width: 300px;
+  max-height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
 }

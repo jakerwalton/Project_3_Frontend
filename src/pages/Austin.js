@@ -20,7 +20,9 @@ function Austin(props) {
   return (
     <div>
       <h1>The Austin Page</h1>
-      <Card restaurants={restaurants} />
+      <div className="card-container">
+        <Card restaurants={restaurants} />
+      </div>
     </div>
   );
 }
