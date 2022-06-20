@@ -7,35 +7,22 @@ import "../App.css"
 function Nav(props) {
   return (
     <nav className="nav">
-      <ul className="links">
-        <li>
-          <a href="/" id="home">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/austin" id="austin">
-            Austin
-          </a>
-        </li>
-        <li>
-          <a href="/detroit" id="detroit">
-            Detroit
-          </a>
-        </li>
-        <li>
-          <a href="/houston" id="houston">
-            Houston
-          </a>
-        </li>
-        <li>
-          <a href="/raleigh" id="raleigh">
-            Raleigh
-          </a>
-        </li>
-      </ul>
+      <Link to="/">
+        <button id="home">Home</button>
+      </Link>
+      <Link to="/austin">
+        <button id="austin">Austin</button>
+      </Link>
+      <Link to="/detroit">
+        <button id="detroit">Detroit</button>
+      </Link>
+      <Link to="/houston">
+        <button id="houston">Houston</button>
+      </Link>
+      <Link to="/raleigh">
+        <button id="raleigh">Raleigh</button>
+      </Link>
     </nav>
   )
 }
-
 export default Nav
