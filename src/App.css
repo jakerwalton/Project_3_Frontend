@@ -64,20 +64,26 @@ a {
 #austin {
   border: 3px solid black;
   background-color: black;
+  border-radius: 5px;
 }
+
 #detroit {
   border: 3px solid black;
   background-color: black;
+  border-radius: 5px;
 }
 #houston {
   border: 3px solid black;
   background-color: black;
+  border-radius: 5px;
 }
 #raleigh {
   border: 3px solid black;
   background-color: black;
+  border-radius: 5px;
 }
 #home {
   border: 3px solid black;
   background-color: black;
+  border-radius: 5px;
 }
