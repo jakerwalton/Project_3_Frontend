@@ -14,7 +14,7 @@ import Raleigh from "./pages/Raleigh"
 
 // Stylesheet
 import "./App.css"
-
+import "./card.css"
 function App() {
   const URL = "https://project-3-backend-hard.herokuapp.com/" // Back-end Heroku link
 
