@@ -6,11 +6,11 @@
 }
 
 .nav {
-  background-color: rgb(155, 244, 155);
+  background-color: #15ab5c;
   display: flex;
   justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .links {
@@ -20,7 +20,7 @@
 }
 
 a {
-  color: orangered;
+  color: white;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -59,4 +59,32 @@ a {
 .restaurant-card-image:hover {
   opacity: 100%;
   border: solid black 1px;
+}
+
+#austin {
+  border: 3px solid black;
+  background-color: black;
+  border-radius: 5px;
+}
+
+#detroit {
+  border: 3px solid black;
+  background-color: black;
+  border-radius: 5px;
+}
+#houston {
+  border: 3px solid black;
+  background-color: black;
+  border-radius: 5px;
+}
+#raleigh {
+  border: 3px solid black;
+  background-color: black;
+  border-radius: 5px;
+}
+#home {
+  border: 3px solid black;
+  background-color: black;
+  border-radius: 5px;
+  /* link */
 }
