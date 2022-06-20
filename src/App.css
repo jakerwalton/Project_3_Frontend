@@ -49,12 +49,20 @@
   list-style-type: none;
   gap: 2rem;
 }
+
+
+#weblink{
+  list-style-type: none;
+}
+
 a {
   color: orangered;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  list-style-type: none;
 }
+
 
 .footer {
   background-color: #61dafb;
@@ -65,13 +73,26 @@ a {
 }
 .card-container {
   display: flex;
+  align-items: center;
   align-content: space-around;
   justify-content: space-around;
-}
+  
+  
+} 
 
 .restaurant-card-image {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 80%;
+  max-height: 40%;
   border: 1px solid black;
   border-radius: 10px;
+  
+}
+.restaurant-card {
+   max-height: 700px;
+   max-width: 200px;
+   background-color:#ADF3C5;
+   height: 450px;
+   border-radius: 20px;
+
+   
 }
