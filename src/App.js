@@ -16,6 +16,7 @@ import Raleigh from "./pages/Raleigh"
 
 // Stylesheet
 import "./App.css"
+import "./card.css"
 
 function App() {
   const [restaurant, setRestaurant] = useState(null)
