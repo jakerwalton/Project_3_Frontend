@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
-
+// import '../houston-style.css';
 import Card from "../components/Restaurant-card";
+import Htown from "../assets/Houstoncity.png";
+
 
 function Houston(props) {
   const [restaurants, setRestaurants] = useState(null);
@@ -20,7 +22,15 @@ function Houston(props) {
 
   return (
     <div>
-      <h1>The Houston's Page</h1>
+        {/* <div className="background">
+            <img src={Htown} className="pic" />
+           
+        </div> */}
+        <div>
+            <h1 className="cityHeader">The Houston's Page</h1>
+            </div>
+
+      
       <div className="card-container">
         <Card restaurants={restaurants} />
       </div>
