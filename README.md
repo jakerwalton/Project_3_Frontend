@@ -38,15 +38,15 @@ The H.A.R.D. Restaurant Tracker provides users the ability to view recommended r
 
 ## Planning
 
-- <a href="https://trello.com/invite/b/8YGWFTvi/eecc499aabd571d4d44e3a996fbabc0a/hard-restaurant-tracker">Trello</a>
+- <a href="https://trello.com/invite/b/8YGWFTvi/eecc499aabd571d4d44e3a996fbabc0a/hard-restaurant-tracker" target="_blank">Trello</a>
 
 ## Wireframe
 
-- <a href="https://www.figma.com/file/GA40odn3H8txaibXOVBSna/H.A.R.D.-Restaurant?node-id=0%3A1">Wireframe</a>
+- <a href="https://www.figma.com/file/GA40odn3H8txaibXOVBSna/H.A.R.D.-Restaurant?node-id=0%3A1" target="_blank">Wireframe</a>
 
 ## E.R.D.
 
-- <a href="https://www.figma.com/file/YbjixReL6we26Vy1IZOLpi/H.A.R.D-Meal-Erd?node-id=0%3A1">E.R.D.</a>
+- <a href="https://www.figma.com/file/YbjixReL6we26Vy1IZOLpi/H.A.R.D-Meal-Erd?node-id=0%3A1" target="_blank">E.R.D.</a>
 
 <!-- ## <a name="design"></a>Design
 
@@ -58,10 +58,10 @@ The H.A.R.D. Restaurant Tracker provides users the ability to view recommended r
 
 ## <a name="deployment"></a>Deployed Link
 
-- TBD
+- <a href="https://hard-restaurant-tracker.netlify.app/" target="_blank">Deployed Link</a>
 
 - You can view the repository:
-  - <a href="https://github.com/jakerwalton/Project_3_Frontend">Backend</a>
+  - <a href="https://github.com/jakerwalton/Project_3_Frontend" target="_blank">Backend</a>
   - <a href="">Frontend</a>
 - If unable to view please go live locally through VS Code
 
@@ -73,20 +73,20 @@ The H.A.R.D. Restaurant Tracker provides users the ability to view recommended r
 
 ### Irving
 
-- <a href="https://github.com/irv302">GitHub</a>
-- <a href="https://www.linkedin.com/in/irving-perez-a9740523b/">LinkedIn</a>
+- <a href="https://github.com/irv302" target="_blank">GitHub</a>
+- <a href="https://www.linkedin.com/in/irving-perez-a9740523b/" target="_blank">LinkedIn</a>
 
 ### Jake
 
-- <a href="https://github.com/jakerwalton/">GitHub</a>
-- <a href="https://www.linkedin.com/in/jacobrwalton/">LinkedIn</a>
+- <a href="https://github.com/jakerwalton/" target="_blank">GitHub</a>
+- <a href="https://www.linkedin.com/in/jacobrwalton/" target="_blank">LinkedIn</a>
 
 ### KriShauna
 
-- <a href="https://github.com/Shauna2022">GitHub</a>
-- <a href="https://www.linkedin.com/in/krishauna-fisher/">LinkedIn</a>
+- <a href="https://github.com/Shauna2022" target="_blank">GitHub</a>
+- <a href="https://www.linkedin.com/in/krishauna-fisher/" target="_blank">LinkedIn</a>
 
 ### Dave
 
 - <a href="https://github.com/dlp140/">GitHub</a>
-- <a href="https://www.linkedin.com/in/david-l-packard/">LinkedIn</a>
+- <a href="https://www.linkedin.com/in/david-l-packard/" target="_blank">LinkedIn</a>
