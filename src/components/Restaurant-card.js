@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react";
+import React from 'react'
+import { Link } from 'react'
 
 // Cards
 function Card(props) {
@@ -20,21 +20,19 @@ function Card(props) {
         <p>Reviewed by: {restaurant.user}</p>
         {/* <p>{restaurant.comments}</p> */}
         <li>
-
-                <a href={restaurant.website} id="weblink">
-                    {restaurant.name}
-                </a>
-            </li>
-
+          <a href={restaurant.website} id="weblink">
+            {restaurant.name}
+          </a>
+        </li>
       </div>
-    ));
-  };
+    ))
+  }
 
   const loading = () => {
-    return <h1>Loading...</h1>;
-  };
+    return <h1>Loading...</h1>
+  }
 
-  return props.restaurants ? loaded() : loading();
+  return props.restaurants ? loaded() : loading()
 }
 
-export default Card;
+export default Card
