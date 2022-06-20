@@ -1,7 +1,6 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  
-...
-  command = "CI= npm run build"
-...
+
+
+command = "CI= npm run build"
