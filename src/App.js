@@ -1,27 +1,26 @@
 // React
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom"
 
 // Components
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 // Pages
-import Home from "./pages/Home";
-import Austin from "./pages/Austin";
-import Detroit from "./pages/Detroit";
-import Houston from "./pages/Houston";
-import Raleigh from "./pages/Raleigh";
+import Home from "./pages/Home"
+import Austin from "./pages/Austin"
+import Detroit from "./pages/Detroit"
+import Houston from "./pages/Houston"
+import Raleigh from "./pages/Raleigh"
 
 // Stylesheet
-import "./App.css";
+import "./App.css"
 
 function App() {
-  const URL = "https://project-3-backend-hard.herokuapp.com/"; // Back-end Heroku link
+  const URL = "https://project-3-backend-hard.herokuapp.com/" // Back-end Heroku link
 
   return (
     <div className="App">
-      <Nav className="nav" />
+      <Header className="header" />
       <Switch>
         {/* Home Route */}
         <Route exact path="/">
@@ -50,7 +49,7 @@ function App() {
       </Switch>
       <Footer className="footer" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

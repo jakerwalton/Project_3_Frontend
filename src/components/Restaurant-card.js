@@ -20,10 +20,12 @@ function Card(props) {
         <p>Reviewed by: {restaurant.user}</p>
         {/* <p>{restaurant.comments}</p> */}
         <li>
+
                 <a href={restaurant.website} id="weblink">
                     {restaurant.name}
                 </a>
             </li>
+
       </div>
     ));
   };
