@@ -35,9 +35,9 @@ function App() {
         "Content-Type": "Application/json",
       },
       body: JSON.stringify(restaurant),
-    })
+    });
     getRestaurant()
-  }
+  };
 
   const updateRestaurant = async (updatedRestaurant, restaurant) => {
     await fetch(URL + restaurant, {
@@ -47,6 +47,7 @@ function App() {
       },
       body: JSON.stringify(updatedRestaurant)
     });
+    getRestaurant();
   };
   
   const deleteRestaurant = async (restaurant) => {
