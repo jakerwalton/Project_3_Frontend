@@ -13,6 +13,7 @@ import Austin from "./pages/Austin"
 import Detroit from "./pages/Detroit"
 import Houston from "./pages/Houston"
 import Raleigh from "./pages/Raleigh"
+import New from "./pages/New"
 
 // Stylesheet
 import "./App.css"
@@ -27,7 +28,16 @@ function App() {
     const data = await response.json()
     setRestaurant(data)
   }
-
+  const createRestaurant = async (restaurant) => {
+    await fetch(URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+      body: JSON.stringify(restaurant),
+    })
+    getRestaurant()
+  }
   useEffect(() => {
     getRestaurant()
   }, [])
@@ -60,6 +70,11 @@ function App() {
         <Route exact path="/raleigh">
           <Raleigh URL={URL} />
         </Route>
+
+        <Route path="/new">
+          <New restaurant={restaurant} createRestaurant={createRestaurant} />
+        </Route>
+
         <Route
           path="/restaurant/:id"
           render={(renderProps) => (
