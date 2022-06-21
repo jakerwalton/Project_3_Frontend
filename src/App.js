@@ -25,8 +25,8 @@ function App() {
 
   const getRestaurant = async () => {
     const response = await fetch(URL)
-    const data = await response.json()
-    setRestaurant(data)
+    const data = await response.json();
+    setRestaurant(data);
   }
   const createRestaurant = async (restaurant) => {
     await fetch(URL, {
@@ -38,6 +38,16 @@ function App() {
     })
     getRestaurant()
   }
+
+  const updateRestaurant = async (updatedRestaurant, restaurant) => {
+    await fetch(URL + restaurant, {
+      method: "PUT",
+      headers: {
+        "content-type": "Application/json"
+      },
+      body: JSON.stringify(updatedRestaurant)
+    });
+  };
   
   const deleteRestaurant = async (restaurant) => {
     await fetch(URL + restaurant, { method: "DELETE" });
@@ -86,6 +96,7 @@ function App() {
           render={(renderProps) => (
             <Show restaurant={restaurant} {...renderProps}
             deleteRestaurant={deleteRestaurant}
+            updateRestaurant={updateRestaurant}
             />
           )}
         />
