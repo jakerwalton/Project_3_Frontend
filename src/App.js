@@ -38,6 +38,12 @@ function App() {
     })
     getRestaurant()
   }
+  
+  const deleteRestaurant = async (restaurant) => {
+    await fetch(URL + restaurant, { method: "DELETE" });
+    getRestaurant();
+  };
+
   useEffect(() => {
     getRestaurant()
   }, [])
@@ -78,7 +84,9 @@ function App() {
         <Route
           path="/restaurant/:id"
           render={(renderProps) => (
-            <Show restaurant={restaurant} {...renderProps} />
+            <Show restaurant={restaurant} {...renderProps}
+            deleteRestaurant={deleteRestaurant}
+            />
           )}
         />
       </Switch>
