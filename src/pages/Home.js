@@ -4,10 +4,10 @@ function Home(props) {
   return (
     <>
       <div id="week"></div>
-      <div className="houston"></div>
-      <div className="detroit"></div>
-      <div className="austin"></div>
-      <div className="raleigh"></div>
+      <div className="houston">houston</div>
+      <div className="detroit">detroit</div>
+      <div className="austin">austin</div>
+      <div className="raleigh">raleigh</div>
       <h1>Home</h1>
     </>
   )
