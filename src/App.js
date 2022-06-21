@@ -28,7 +28,6 @@ function App() {
     const data = await response.json()
     setRestaurant(data)
   }
-
   const createRestaurant = async (restaurant) => {
     await fetch(URL, {
       method: "POST",
@@ -39,7 +38,6 @@ function App() {
     })
     getRestaurant()
   }
-
   useEffect(() => {
     getRestaurant()
   }, [])
@@ -72,9 +70,11 @@ function App() {
         <Route exact path="/raleigh">
           <Raleigh URL={URL} />
         </Route>
+
         <Route path="/new">
           <New restaurant={restaurant} createRestaurant={createRestaurant} />
         </Route>
+
         <Route
           path="/restaurant/:id"
           render={(renderProps) => (
