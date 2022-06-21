@@ -19,11 +19,13 @@ function Card(props) {
         <h4>{restaurant.userRating} / 5</h4>
         <p>Reviewed by: {restaurant.user}</p>
         {/* <p>{restaurant.comments}</p> */}
+        <div id="weblink">
         <li>
-          <a href={restaurant.website} id="weblink">
-            {restaurant.name}
-          </a>
-        </li>
+                <a href={restaurant.website} id="weblinkA">
+                    {restaurant.name}
+                </a>
+            </li>
+        </div>
       </div>
     ))
   }
