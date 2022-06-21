@@ -1,6 +1,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import Ralcity from "../assets/Raleigh.png"
 
 function Raleigh(props) {
   const [restaurants, setRestaurants] = useState(null)
@@ -35,11 +36,13 @@ function Raleigh(props) {
         <h4>{raleigh.userRating} / 5</h4>
         <p>Reviewed by: {raleigh.user}</p>
         {/* <p>{restaurant.comments}</p> */}
+        <div id="weblink">
         <li>
-          <a href={raleigh.website} id="weblink">
+          <a href={raleigh.website} id="restweb-H">
             {raleigh.name}
           </a>
         </li>
+        </div>
       </div>
     ))
   }
@@ -51,6 +54,11 @@ function Raleigh(props) {
   return (
     <div>
       <h1>Raleigh</h1>
+      <div>
+    <img src={Ralcity} className="pic" />
+    
+    </div>
+      
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-
+import Dcity from "../assets/Detroit.png"
 function Detroit(props) {
   const [restaurants, setRestaurants] = useState(null)
 
@@ -35,11 +35,13 @@ function Detroit(props) {
         <h4>{detroit.userRating} / 5</h4>
         <p>Reviewed by: {detroit.user}</p>
         {/* <p>{restaurant.comments}</p> */}
+        <div id="weblink">
         <li>
-          <a href={detroit.website} id="weblink">
+          <a href={detroit.website} id="restweb-D">
             {detroit.name}
           </a>
         </li>
+        </div>
       </div>
     ))
   }
@@ -51,6 +53,10 @@ function Detroit(props) {
   return (
     <div>
       <h1>Detroit</h1>
+      <div>
+      <img src={Dcity} className="pic" />
+      </div>
+      
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
     </div>
   )
