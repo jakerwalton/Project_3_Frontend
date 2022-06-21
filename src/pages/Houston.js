@@ -1,6 +1,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import Htown from "../assets/Houstoncity.png"
 
 function Houston(props) {
   const [restaurants, setRestaurants] = useState(null)
@@ -23,7 +24,8 @@ function Houston(props) {
 
     return houston.map((houston, index) => (
       <div key={index} className="restaurant-card">
-        <h2>{houston.name}</h2>
+        <h2>
+          {houston.name}</h2>
         <Link to={`restaurant/${houston._id}`}>
           <img
             src={houston.image}
@@ -35,11 +37,13 @@ function Houston(props) {
         <h4>{houston.userRating} / 5</h4>
         <p>Reviewed by: {houston.user}</p>
         {/* <p>{restaurant.comments}</p> */}
+        <div id="weblink">
         <li>
-          <a href={houston.website} id="weblink">
+          <a href={houston.website} id="restweb-H">
             {houston.name}
           </a>
         </li>
+        </div>
       </div>
     ))
   }
@@ -49,11 +53,16 @@ function Houston(props) {
   }
 
   return (
+    
     <div>
       <h1>Houston</h1>
+      <div>
+      <img src={Htown} className="pic" />
+      </div>
+      
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
     </div>
   )
 }
 
-export default Houston
+export default Houston;

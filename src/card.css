@@ -18,10 +18,15 @@
     transition: 0.3s;
     overflow-wrap:break-word;
  }
- #weblinkA {
+ #restweb-H {
      color:orangered;
      
  }
+ #restweb-D {
+     color:rgb(255, 0, 0);
+     
+ }
+
  #weblink:hover{
      background-color: #24d5db;
      border-radius: 10px;
