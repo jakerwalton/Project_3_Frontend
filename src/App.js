@@ -21,7 +21,7 @@ import "./card.css"
 
 function App() {
   const [restaurant, setRestaurant] = useState(null)
-  const URL = "https://project-3-backend-hard.herokuapp.com/all" // Back-end Heroku link
+  const URL = "https://project-3-backend-hard.herokuapp.com/all/" // Back-end Heroku link
 
   const getRestaurant = async () => {
     const response = await fetch(URL)
