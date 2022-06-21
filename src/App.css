@@ -19,7 +19,6 @@
   gap: 2rem;
 }
 
-
 a {
   color: white;
   font-weight: 600;
@@ -28,9 +27,8 @@ a {
   list-style-type: none;
 }
 
-
 .footer {
-  background-color: #61dafb;
+  background-color: #8becad;
   opacity: 50%;
   bottom: 0;
   width: 100%;
@@ -41,13 +39,10 @@ a {
 
   align-items: center;
 
-
   align-content: space-around;
   justify-content: space-around;
   list-style-type: none;
-  
-  
-} 
+}
 
 .restaurant-card {
   width: 400px;
@@ -58,17 +53,16 @@ a {
   max-height: 40%;
   border: 1px solid black;
   border-radius: 10px;
-  
 }
 
 .restaurant-card {
-   max-height: 700px;
-   max-width: 200px;
-   background-color:#8becad;
-   height: 450px;
-   border-radius: 20px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-   transition: 0.3s;
+  max-height: 700px;
+  max-width: 200px;
+  background-color: #8becad;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
 }
 
 .restaurant-card-image:hover {
@@ -79,30 +73,34 @@ a {
 #austin {
   border: 3px solid black;
   background-color: black;
+  color: ghostwhite;
   border-radius: 5px;
 }
 
 #detroit {
   border: 3px solid black;
   background-color: black;
+  color: ghostwhite;
   border-radius: 5px;
 }
 #houston {
   border: 3px solid black;
   background-color: black;
+  color: ghostwhite;
   border-radius: 5px;
 }
 #raleigh {
   border: 3px solid black;
   background-color: black;
+  color: ghostwhite;
   border-radius: 5px;
 }
 #home {
   border: 3px solid black;
   background-color: black;
+  color: ghostwhite;
   border-radius: 5px;
   /* link */
-
 }
 .restaurant-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
