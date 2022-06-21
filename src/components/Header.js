@@ -6,7 +6,7 @@ import '../App.css'
 
 function Header(props) {
   return (
-    <nav className="nav">
+    <nav className="nav" id="nav1">
       <Link to="/">
         <button id="home">Home</button>
       </Link>
