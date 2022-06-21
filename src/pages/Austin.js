@@ -43,7 +43,17 @@ function Austin(props) {
       </div>
     ))
   }
-  return restaurants ? loaded() : <h2>Loading...</h2>
+
+  const loading = () => {
+    return <h2>Loading...</h2>
+  }
+
+  return (
+    <div>
+      <h1>Austin</h1>
+      <div className="card-container">{restaurants ? loaded() : loading()}</div>
+    </div>
+  )
 }
 
 export default Austin
