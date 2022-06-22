@@ -38,6 +38,7 @@ header {
   text-align: center;
   position: fixed;
   width: 100%;
+  background-color:ghostwhite;
 }
 
 .links {
@@ -50,7 +51,7 @@ header {
   background-color: #8becad;
   opacity: 50%;
   bottom: 0;
-  width: 150%;
+  width: 100%;
 }
 
 #austin {
@@ -96,6 +97,7 @@ header {
   width: 100vw;
   position: relative;
   object-fit: cover;
+  z-index: -1;
 }
 
 .week {
