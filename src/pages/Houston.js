@@ -57,7 +57,7 @@ function Houston(props) {
     <div>
       <h1>Houston</h1>
       <div>
-      <img src={Htown} className="pic" />
+      <img src={Htown} alt="city pic" className="pic" />
       </div>
       
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
