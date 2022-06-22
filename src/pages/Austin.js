@@ -1,7 +1,7 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Austcity from '../assets/austin.png'
+import React from "react"
+import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+import Austcity from "../assets/austin.png"
 
 function Austin(props) {
   const [restaurants, setRestaurants] = useState(null)
@@ -18,7 +18,7 @@ function Austin(props) {
 
   const loaded = () => {
     const austin = restaurants.filter(
-      (restaurant) => restaurant.city === 'Austin'
+      (restaurant) => restaurant.city === "Austin"
     )
     console.log(austin)
 
@@ -53,10 +53,9 @@ function Austin(props) {
 
   return (
     <div>
-      <h1>Austin</h1>
+      <h1 className="city-h1">Austin</h1>
       <div>
-
-      <img src={Austcity} alt="city pic" className="pic" />
+        <img src={Austcity} alt="city pic" className="pic" />
       </div>
 
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
