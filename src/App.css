@@ -21,6 +21,7 @@
 h1 {
   text-align: center;
 }
+
 header {
   border: 3px solid #15ab5c;
   background-color: #15ab5c;
@@ -47,6 +48,17 @@ header {
   position: fixed;
   width: 100%;
   background-color: ghostwhite;
+}
+
+.greeting-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.greeting-list-item {
+  display: flex;
+  align-items: center;
 }
 
 .links {

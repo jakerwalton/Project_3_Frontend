@@ -6,6 +6,11 @@ import { login, logout } from '../services/firebase'
 import '../App.css'
 
 function Header(props) {
+  const photoStyles = {
+    borderRadius: '50%',
+    height: '2.5rem',
+    margin: '0 1rem'
+  }
   return (
     <nav className="nav" id="nav1">
       <Link to="/">
@@ -25,7 +30,9 @@ function Header(props) {
       </Link>
       {
         props.user 
-        ? <button id='logout' onClick={logout}>Logout</button>      
+        ? ( <><ul className='greeting-list'><li className='greeting-list-item'>Welcome, {props.user.displayName} <img style={photoStyles} src={props.user.photoURL} alt={props.user.displayName}/></li></ul>
+              <button id='logout' onClick={logout}>Logout</button>
+            </> ) 
         : <button id="login" onClick={login}>Login</button> 
       }
     </nav>
