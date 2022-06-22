@@ -22,12 +22,12 @@ function Show(props) {
     e.preventDefault();
     const { ...restaurant } = editForm;
     props.updateRestaurant({ ...restaurant }, id);
-
+    props.history.push(`/${restaurant.city}`)
   };
 
   const handleRemoveRestaurant = (id) => {
     props.deleteRestaurant(id);
-    props.history.push('/')
+    props.history.push(`/${restaurant.city}`)
   };
 
   useEffect(() => {
