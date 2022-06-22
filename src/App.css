@@ -181,3 +181,7 @@ header {
   height: 300px;
   border-radius: 20px;
 }
+
+.show-h1 {
+  margin-top: 75px;
+}
