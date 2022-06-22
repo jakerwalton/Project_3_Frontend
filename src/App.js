@@ -1,6 +1,7 @@
 // React
 import { Route, Switch } from "react-router-dom"
 import { useState, useEffect } from "react"
+import { auth } from './services/firebase'
 
 // Components
 import Header from "./components/Header"
@@ -20,6 +21,12 @@ import "./App.css"
 import "./card.css"
 
 function App() {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    auth.onAuthStateChanged(user => setUser(user))
+  }, [])
+  
   const [restaurant, setRestaurant] = useState(null)
   const URL = "https://project-3-backend-hard.herokuapp.com/all/" // Back-end Heroku link
 
@@ -57,11 +64,12 @@ function App() {
 
   useEffect(() => {
     getRestaurant()
+
   }, [])
 
   return (
     <div className="App">
-      <Header className="header" />
+      <Header className="header" user={user}/>
       <Switch>
         {/* Home Route */}
         <Route exact path="/">

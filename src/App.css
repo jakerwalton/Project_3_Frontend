@@ -67,6 +67,7 @@ header {
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
+  cursor: pointer
 }
 
 #detroit {
@@ -74,30 +75,52 @@ header {
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
+  cursor: pointer
 }
 #houston {
   border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
+  cursor: pointer
 }
 #raleigh {
   border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
+  cursor: pointer
 }
 #home {
   border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
+  cursor: pointer
 }
 #login {
   border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
+  cursor: pointer
+}
+#logout {
+  border: 10px solid black;
+  background-color: black;
+  color: ghostwhite;
+  border-radius: 5px;
+  cursor: pointer
+}
+#login:hover {
+  transition: 0.3s;
+  background-color: #15ab5c;
+  border: 10px solid #15ab5c
+}
+#logout:hover {
+  transition: 0.3s;
+  background-color: red;
+  border: 10px solid red;
 }
 .pic {
   height: 50vh;
