@@ -32,7 +32,7 @@ function Austin(props) {
             className="restaurant-card-image"
           ></img>
         </Link>
-        <h3>{austin.cuisine[0]}</h3>
+        <h3>{austin.cuisine.join(" • ")}</h3>
         <h4>{austin.userRating} / 5</h4>
         <p>Reviewed by: {austin.user}</p>
         {/* <p>{restaurant.comments}</p> */}
