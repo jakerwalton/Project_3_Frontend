@@ -1,9 +1,13 @@
 .card-container {
+    max-width: 80%;
+    border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
     list-style-type: none;
+
     
   } 
 
@@ -35,9 +39,16 @@
     transition: 0.8s;
     }
  
+ .restaurant-card-image {
+   opacity: 100%;
+   border: solid black 1px;
+ }
  .restaurant-card-image:hover {
    opacity: 100%;
    border: solid black 1px;
+   border-style: outset;
+   border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
  }
 
   
