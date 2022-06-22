@@ -1,5 +1,6 @@
-import React from "react";
-import { useState } from "react";
+import React from "react"
+import { useState } from "react"
+import { useHistory } from "react-router-dom"
 
 function New(props) {
   const [newForm, setNewForm] = useState({
@@ -12,22 +13,24 @@ function New(props) {
     style: [],
     cuisine: [],
     user: "",
-    userRating: null,
+    userRating: "",
     comments: "",
-    googleRating: null,
-    yelpRating: null,
-  });
+    googleRating: "",
+    yelpRating: "",
+  })
 
   const handleChange = (event) => {
-    setNewForm({ ...newForm, [event.target.name]: event.target.value });
-  };
+    setNewForm({ ...newForm, [event.target.name]: event.target.value })
+  }
+
+  const history = useHistory()
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    props.createRestaurant(newForm);
-    setNewForm({ ...newForm });
-    props.history.push('/')
-  };
+    event.preventDefault()
+    props.createRestaurant(newForm)
+    setNewForm({ ...newForm })
+    history.push("/")
+  }
 
   const loaded = () => {
     return (
@@ -64,7 +67,7 @@ function New(props) {
             />
             <br />
             <label htmlFor="state"></label>
-            <select id="state" name="state" required>
+            <select id="state" name="state" onChange={handleChange} required>
               <option defaultValue="" disabled>
                 State
               </option>
@@ -121,7 +124,7 @@ function New(props) {
               <option value="WY">Wyoming</option>
             </select>
             <br />
-            {/* <input
+            <input
               type="url"
               value={newForm.website}
               name="website"
@@ -339,6 +342,7 @@ function New(props) {
             <p>Your comments:</p>
             <textarea
               name="comments"
+              value={newForm.comments}
               placeholder="Their tacos are amazing!"
               onChange={handleChange}
               required
@@ -371,14 +375,14 @@ function New(props) {
             out of 5
             <br />
             <br />
-            <br /> */}
+            <br />
             <input type="submit" value="Add Restaurant" />
           </form>
         </section>
       </>
-    );
-  };
-  return props.restaurant ? loaded() : <h2>Loading...</h2>;
+    )
+  }
+  return props.restaurant ? loaded() : <h2>Loading...</h2>
 }
 
-export default New;
+export default New
