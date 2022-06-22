@@ -55,7 +55,7 @@ function Raleigh(props) {
     <div>
       <h1>Raleigh</h1>
       <div>
-    <img src={Ralcity} className="pic" />
+    <img src={Ralcity} alt="city pic" className="pic" />
     
     </div>
       
