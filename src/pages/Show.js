@@ -38,7 +38,8 @@ function Show(props) {
 
   return (
     <>
-      <div>
+    
+      <div className="edit-card">
         <p>{restaurant?.name}</p>
         <button onClick={() => handleRemoveRestaurant(restaurant?._id)}>Delete Restaurant</button>
         <Form
@@ -47,6 +48,22 @@ function Show(props) {
           handleSubmit={handleSubmit}
         />
       </div>
+      <div key={restaurant._id} className="show-card">
+        {/* <Link to={`/restaurant/${restaurant._id}`}> */}
+        <h2>{restaurant.name}</h2>
+        {/* </Link> */}
+        <img
+          src={restaurant.image}
+          alt={restaurant.name}
+          className="
+        show-card-image"
+        ></img>
+        <h3>{restaurant.cuisine[0]}</h3>
+        <h4>{restaurant.userRating} / 5</h4>
+        <p>Reviewed by: {restaurant.user}</p>
+        <p>{restaurant.comments}</p>
+       
+        </div>
     </>
   )
 }
