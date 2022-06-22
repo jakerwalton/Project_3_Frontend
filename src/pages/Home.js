@@ -4,12 +4,11 @@ function Home(props) {
   return (
     <div className="container">
       <div id="week"></div>
-      <header></header>
+      <header>Restraunt Tracker</header>
       <div className="houston">houston</div>
       <div className="detroit">detroit</div>
       <div className="austin">austin</div>
       <div className="raleigh">raleigh</div>
-      <h1>Restraunt Tracker</h1>
     </div>
   )
 }
