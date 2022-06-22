@@ -9,23 +9,21 @@ function Home(props) {
     <div className="container">
       <div id="week"></div>
       <header>
-        <img src={hard} />
+        <img src={hard} width="600px" />
       </header>
       <div className="houston">
-        <img src={Htown} width="200px" height={150} center />
-        houston
+        houston <img src={Htown} width="200px" height={150} center />
       </div>
       <div className="detroit">
-        <img src={Dcity} width="200px" height={150} center />
-        detroit
+        detroit <img src={Dcity} width="200px" height={150} center />
       </div>
       <div className="austin">
-        <img src={Austcity} width="210px" height={150} center />
         austin
+        <img src={Austcity} width="210px" height={150} center />
       </div>
       <div className="raleigh">
-        <img src={Ralcity} width="200px" height={150} center />
         raleigh
+        <img src={Ralcity} width="200px" height={150} center />
       </div>
     </div>
   )

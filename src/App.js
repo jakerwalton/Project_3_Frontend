@@ -24,18 +24,23 @@ function App() {
   const [user, setUser] = useState(null)
 
   useEffect(() => {
-    auth.onAuthStateChanged(user => setUser(user))
+    const unsubscribe = auth.onAuthStateChanged(user => setUser(user))
+    return () => {
+      unsubscribe()
+    }
   }, [])
   
   const [restaurant, setRestaurant] = useState(null)
   const URL = "https://project-3-backend-hard.herokuapp.com/all/" // Back-end Heroku link
 
   const getRestaurant = async () => {
+    if(user) return
     const response = await fetch(URL)
     const data = await response.json();
     setRestaurant(data);
   }
   const createRestaurant = async (restaurant) => {
+    if(!user) return
     await fetch(URL, {
       method: "POST",
       headers: {
@@ -47,6 +52,7 @@ function App() {
   };
 
   const updateRestaurant = async (updatedRestaurant, restaurant) => {
+    if(!user) return
     await fetch(URL + restaurant, {
       method: "PUT",
       headers: {
@@ -58,6 +64,7 @@ function App() {
   };
   
   const deleteRestaurant = async (restaurant) => {
+    if(!user) return
     await fetch(URL + restaurant, { method: "DELETE" });
     getRestaurant();
   };
@@ -103,7 +110,10 @@ function App() {
         <Route
           path="/restaurant/:id"
           render={(renderProps) => (
-            <Show restaurant={restaurant} {...renderProps}
+            <Show 
+            user={user}
+            restaurant={restaurant} 
+            {...renderProps}
             deleteRestaurant={deleteRestaurant}
             updateRestaurant={updateRestaurant}
             />
