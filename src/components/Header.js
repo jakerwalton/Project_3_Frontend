@@ -22,6 +22,9 @@ function Header(props) {
       <Link to="/raleigh">
         <button id="raleigh">Raleigh</button>
       </Link>
+      <Link to="/">
+        <button id="login">Log In</button>
+      </Link>
     </nav>
   )
 }
