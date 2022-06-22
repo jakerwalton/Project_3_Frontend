@@ -63,32 +63,38 @@ header {
 }
 
 #austin {
-  border: 3px solid black;
+  border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
 }
 
 #detroit {
-  border: 3px solid black;
+  border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
 }
 #houston {
-  border: 3px solid black;
+  border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
 }
 #raleigh {
-  border: 3px solid black;
+  border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
 }
 #home {
-  border: 3px solid black;
+  border: 10px solid black;
+  background-color: black;
+  color: ghostwhite;
+  border-radius: 5px;
+}
+#login {
+  border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
@@ -110,8 +116,8 @@ header {
 .houston {
   grid-area: houston;
   background-color: #8becad;
-  width: 145px;
-  height: 200px;
+  width: 245px;
+  height: 300px;
   border-radius: 20px;
   margin-left: 180px;
 }
@@ -119,8 +125,8 @@ header {
 .detroit {
   grid-area: detroit;
   background-color: #8becad;
-  width: 145px;
-  height: 200px;
+  width: 245px;
+  height: 300px;
   border-radius: 20px;
   margin-right: 180px;
 }
@@ -128,15 +134,15 @@ header {
 .austin {
   grid-area: austin;
   background-color: #8becad;
-  width: 145px;
-  height: 200px;
+  width: 245px;
+  height: 300px;
   border-radius: 20px;
 }
 
 .raleigh {
   grid-area: raleigh;
   background-color: #8becad;
-  width: 145px;
-  height: 200px;
+  width: 245px;
+  height: 300px;
   border-radius: 20px;
 }
