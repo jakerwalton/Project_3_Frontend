@@ -1,5 +1,6 @@
 // React
 import { Link } from 'react-router-dom'
+import { login, logout } from '../services/firebase'
 
 // Stylesheet
 import '../App.css'
@@ -22,9 +23,11 @@ function Header(props) {
       <Link to="/raleigh">
         <button id="raleigh">Raleigh</button>
       </Link>
-      <Link to="/">
-        <button id="login">Log In</button>
-      </Link>
+      {
+        props.user 
+        ? <button id='logout' onClick={logout}>Logout</button>      
+        : <button id="login" onClick={login}>Login</button> 
+      }
     </nav>
   )
 }
