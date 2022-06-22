@@ -36,11 +36,11 @@ function Detroit(props) {
         <p>Reviewed by: {detroit.user}</p>
         {/* <p>{restaurant.comments}</p> */}
         <div id="weblink">
-        <li>
-          <a href={detroit.website} id="restweb-D">
-            {detroit.name}
-          </a>
-        </li>
+          <li>
+            <a href={detroit.website} id="restweb-D">
+              {detroit.name}
+            </a>
+          </li>
         </div>
       </div>
     ))
@@ -52,11 +52,11 @@ function Detroit(props) {
 
   return (
     <div>
-      <h1>Detroit</h1>
+      <h1 className="city-h1">Detroit</h1>
       <div>
-      <img src={Dcity} alt="city pic" className="pic" />
+        <img src={Dcity} alt="city pic" className="pic" />
       </div>
-      
+
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
     </div>
   )

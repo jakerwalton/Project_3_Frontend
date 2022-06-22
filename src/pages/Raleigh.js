@@ -37,11 +37,11 @@ function Raleigh(props) {
         <p>Reviewed by: {raleigh.user}</p>
         {/* <p>{restaurant.comments}</p> */}
         <div id="weblink">
-        <li>
-          <a href={raleigh.website} id="restweb-H">
-            {raleigh.name}
-          </a>
-        </li>
+          <li>
+            <a href={raleigh.website} id="restweb-H">
+              {raleigh.name}
+            </a>
+          </li>
         </div>
       </div>
     ))
@@ -53,12 +53,11 @@ function Raleigh(props) {
 
   return (
     <div>
-      <h1>Raleigh</h1>
+      <h1 className="city-h1">Raleigh</h1>
       <div>
-    <img src={Ralcity} alt="city pic" className="pic" />
-    
-    </div>
-      
+        <img src={Ralcity} alt="city pic" className="pic" />
+      </div>
+
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
     </div>
   )

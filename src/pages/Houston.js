@@ -24,8 +24,7 @@ function Houston(props) {
 
     return houston.map((houston, index) => (
       <div key={index} className="restaurant-card">
-        <h2>
-          {houston.name}</h2>
+        <h2>{houston.name}</h2>
         <Link to={`restaurant/${houston._id}`}>
           <img
             src={houston.image}
@@ -38,11 +37,11 @@ function Houston(props) {
         <p>Reviewed by: {houston.user}</p>
         {/* <p>{restaurant.comments}</p> */}
         <div id="weblink">
-        <li>
-          <a href={houston.website} id="restweb-H">
-            {houston.name}
-          </a>
-        </li>
+          <li>
+            <a href={houston.website} id="restweb-H">
+              {houston.name}
+            </a>
+          </li>
         </div>
       </div>
     ))
@@ -53,16 +52,15 @@ function Houston(props) {
   }
 
   return (
-    
     <div>
-      <h1>Houston</h1>
+      <h1 className="city-h1">Houston</h1>
       <div>
-      <img src={Htown} alt="city pic" className="pic" />
+        <img src={Htown} alt="city pic" className="pic" />
       </div>
-      
+
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
     </div>
   )
 }
 
-export default Houston;
+export default Houston
