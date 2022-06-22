@@ -32,7 +32,7 @@ function Houston(props) {
             className="restaurant-card-image"
           ></img>
         </Link>
-        <h3>{houston.cuisine[0]}</h3>
+        <h3>{houston.cuisine.join(" • ")}</h3>
         <h4>{houston.userRating} / 5</h4>
         <p>Reviewed by: {houston.user}</p>
         {/* <p>{restaurant.comments}</p> */}

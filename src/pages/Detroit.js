@@ -31,7 +31,7 @@ function Detroit(props) {
             className="restaurant-card-image"
           ></img>
         </Link>
-        <h3>{detroit.cuisine[0]}</h3>
+        <h3>{detroit.cuisine.join(" • ")}</h3>
         <h4>{detroit.userRating} / 5</h4>
         <p>Reviewed by: {detroit.user}</p>
         {/* <p>{restaurant.comments}</p> */}

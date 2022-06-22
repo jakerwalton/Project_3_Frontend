@@ -32,7 +32,7 @@ function Raleigh(props) {
             className="restaurant-card-image"
           ></img>
         </Link>
-        <h3>{raleigh.cuisine[0]}</h3>
+        <h3>{raleigh.cuisine.join(" • ")}</h3>
         <h4>{raleigh.userRating} / 5</h4>
         <p>Reviewed by: {raleigh.user}</p>
         {/* <p>{restaurant.comments}</p> */}
