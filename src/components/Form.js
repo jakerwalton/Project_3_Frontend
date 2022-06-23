@@ -107,8 +107,8 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
             required
           />
           <br />
-          <fieldset className="fieldset-style">
-            <legend>
+          <fieldset className="style-fieldset">
+            <legend className="style-legend">
               <p>Style (check all that apply)</p>
             </legend>
             <input
@@ -145,8 +145,8 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
             <label htmlFor="Foodtruck">Foodtruck</label>
           </fieldset>
           <br />
-          <fieldset>
-            <legend>
+          <fieldset className="cuisine-fieldset">
+            <legend className="cuisine-legend">
               <p>Cuisine (check all that apply)</p>
             </legend>
             <input
