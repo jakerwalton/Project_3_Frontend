@@ -36,13 +36,7 @@ function Raleigh(props) {
         <h4>{raleigh.userRating} / 5</h4>
         <p>Reviewed by: {raleigh.user}</p>
         {/* <p>{restaurant.comments}</p> */}
-        <div id="weblink">
-          <li>
-            <a href={raleigh.website} id="restweb-H">
-              {raleigh.name}
-            </a>
-          </li>
-        </div>
+        
       </div>
     ))
   }

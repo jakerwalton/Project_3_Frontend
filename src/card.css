@@ -1,12 +1,25 @@
+body{
+  background-image: url("./assets/ntrlwood.png");
+background-size:contain;
+background-position: center;
+    
+}
+
+.show-h1,
+.city-h1,
+.new-h1{
+    color:whitesmoke;
+}
+
 .card-container {
     max-width: 100%;
     width: 100%;
     border-radius: 20px;
-    /* display: flex; */
-    display:grid;
-    row-gap: 1ch;
-    grid-template-columns: auto auto auto;
-    /* flex-wrap: wrap; */
+    display: flex;
+    /* display:grid; */
+    row-gap: 2ch;
+    /* grid-template-columns: auto auto auto; */
+    flex-wrap: wrap;
     align-items: auto;
     align-content: space-around;
     justify-content: space-around;

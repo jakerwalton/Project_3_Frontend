@@ -35,13 +35,7 @@ function Detroit(props) {
         <h4>{detroit.userRating} / 5</h4>
         <p>Reviewed by: {detroit.user}</p>
         {/* <p>{restaurant.comments}</p> */}
-        <div id="weblink">
-          <li>
-            <a href={detroit.website} id="restweb-D">
-              {detroit.name}
-            </a>
-          </li>
-        </div>
+       
       </div>
     ))
   }
