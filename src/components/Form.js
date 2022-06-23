@@ -1,9 +1,9 @@
 const Form = ({ formType, handleSubmit, handleChange }) => {
   return (
-    <div>
+    <div className="form">
       <form onSubmit={handleSubmit}>
-        <fieldset class="restaurant-info-fieldset">
-          <legend class="restaurant-info-legend">RESTAURANT INFO</legend>
+        <fieldset className="restaurant-info-fieldset">
+          <legend className="restaurant-info-legend">RESTAURANT INFO</legend>
           <input
             type="text"
             value={formType?.name}
@@ -298,7 +298,7 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
             onChange={handleChange}
             min="0"
             max="5"
-          />{" "}
+          />{' '}
           out of 5
           <br />
           <p>Yelp Rating (optional):</p>
@@ -311,7 +311,7 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
             onChange={handleChange}
             min="0"
             max="5"
-          />{" "}
+          />{' '}
           out of 5
         </fieldset>
         <br />
@@ -328,7 +328,7 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
             min="0"
             max="5"
             required
-          />{" "}
+          />{' '}
           out of 5
           <br />
           <p>Your comments:</p>
