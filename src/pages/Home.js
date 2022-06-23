@@ -10,11 +10,13 @@ function Home(props) {
     <div>
       <div className="container">
         <header>
-          <img src={hard} alt="HARD Logo" width="600px" />
+          <img src={hard} alt="HARD Logo" width="400px" height={400} />
         </header>
         <Link className="houston" to="/houston">
           <div>
-            houston <img src={Htown} alt="Houston" width="200px" height={150} />
+            <img src={Htown} alt="Houston" width="200px" height={150} />
+            <br />
+            See exciting restaurants in Houston!
           </div>
         </Link>
         <div id="new">
@@ -24,19 +26,23 @@ function Home(props) {
         </div>
         <Link className="detroit" to="/detroit">
           <div>
-            detroit <img src={Dcity} alt="Detroit" width="200px" height={150} />
+            <img src={Dcity} alt="Detroit" width="200px" height={150} />
+            <br />
+            Find unique restaurants in Detroit!
           </div>
         </Link>
         <Link className="austin" to="/austin">
           <div>
-            austin
             <img src={Austcity} alt="Austin" width="210px" height={150} />
+            <br />
+            Look at these awsome restaurants in Austin!
           </div>
         </Link>
         <Link className="raleigh" to="/raleigh">
           <div>
-            raleigh
             <img src={Ralcity} alt="Raleigh" width="200px" height={150} />
+            <br />
+            Did you see these amazing restaurants in Raleigh?!
           </div>
         </Link>
       </div>

@@ -1,25 +1,23 @@
 body {
   font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 .container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: auto;
+  align-content: space-around;
+  justify-content: space-around;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.35fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.35fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    'nav nav nav nav nav nav nav'
-    '. header header header header header .'
-    '. header header header header header .'
-    '. header header header header header .'
-    '. . . new . . .'
-    '. . . austin . . .'
-    '. . . austin . . .'
-    '. houston . austin . detroit  .'
-    '.  houston . . . detroit  .'
-    '. houston . raleigh . detroit  .'
-    '. . . raleigh . . .'
-    '. . . raleigh . . .';
+    'nav nav nav nav nav'
+    '. header header header . '
+    'houston austin new detroit raleigh';
 }
 h1 {
   text-align: center;
@@ -30,6 +28,10 @@ header {
   background-color: #15ab5c;
   grid-area: header;
   border-radius: 20px;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: -75px;
+  /* pad */
 }
 
 .App {
@@ -82,6 +84,8 @@ header {
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 
 #detroit {
@@ -90,6 +94,8 @@ header {
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 #houston {
   border: 10px solid black;
@@ -97,6 +103,8 @@ header {
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 #raleigh {
   border: 10px solid black;
@@ -104,6 +112,8 @@ header {
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 #home {
   border: 10px solid black;
@@ -111,6 +121,8 @@ header {
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 #login {
   border: 10px solid black;
@@ -118,6 +130,8 @@ header {
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 #logout {
   border: 10px solid black;
@@ -125,6 +139,8 @@ header {
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 #new {
   grid-area: new;
@@ -138,6 +154,8 @@ header {
   border-radius: 5px;
   cursor: pointer;
   margin: 70px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 600;
 }
 #login:hover {
   transition: 0.3s;
@@ -163,13 +181,16 @@ header {
   width: 245px;
   height: 300px;
   border-radius: 20px;
-  margin-left: 180px;
+  /* margin-right: 180px; */
+  padding-top: 30px;
 }
 .houston:link {
   color: black;
+  text-decoration: none;
 }
 .houston:visited {
   color: black;
+  text-decoration: none;
 }
 
 .detroit {
@@ -178,13 +199,16 @@ header {
   width: 245px;
   height: 300px;
   border-radius: 20px;
-  margin-right: 180px;
+  /* margin-right: 100px; */
+  padding-top: 30px;
 }
 .detroit:link {
   color: black;
+  text-decoration: none;
 }
 .detroit:visited {
   color: black;
+  text-decoration: none;
 }
 .austin {
   grid-area: austin;
@@ -192,12 +216,15 @@ header {
   width: 245px;
   height: 300px;
   border-radius: 20px;
+  padding-top: 30px;
 }
 .austin:link {
   color: black;
+  text-decoration: none;
 }
 .austin:visited {
   color: black;
+  text-decoration: none;
 }
 .raleigh {
   grid-area: raleigh;
@@ -205,12 +232,16 @@ header {
   width: 245px;
   height: 300px;
   border-radius: 20px;
+  padding-top: 30px;
+  /* margin-right: 10px; */
 }
 .raleigh:link {
   color: black;
+  text-decoration: none;
 }
 .raleigh:visited {
   color: black;
+  text-decoration: none;
 }
 .show-h1,
 .city-h1,
