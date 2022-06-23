@@ -2,14 +2,21 @@ import { useState, useEffect } from "react"
 import Form from "../components/Form"
 import { useRouteMatch } from "react-router-dom"
 
+
 function Show(props) {
   const match = useRouteMatch("/restaurant/:id")
   const id = props.match.params.id
   const restaurant = props?.restaurant?.find((p) => p._id === id)
-
+  
+  const [showForm, setShowForm] = useState(false)
   const [editForm, setEditForm] = useState(restaurant)
-  let formType = editForm
+  const formType = editForm
 
+
+  const displayEdit = () => {
+    setShowForm(!showForm)
+  }
+  
   const handleChange = (e) => {
     setEditForm({
       ...editForm,
@@ -55,6 +62,10 @@ function Show(props) {
         <h4>Yelp Reviews: {restaurant?.yelpRating} / 5</h4>
         <p>"{restaurant?.comments}"</p>
         <p>Reviewed by: {restaurant?.user}</p>
+        <button
+          onClick={() => {displayEdit()}}>
+            Edit
+        </button>
         {props.user && (
           <button onClick={() => handleRemoveRestaurant(restaurant?._id)}>
             Delete Restaurant
@@ -64,14 +75,15 @@ function Show(props) {
         <br />
       </div>
       {props.user && (
-        <div className="edit-card">
+        <div id="edit-card"className={showForm ? "showForm" : "hideForm"}>
           <br />
           <h2>Edit Restaurant</h2>
-          <Form
-            formType={formType}
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-          />
+            <Form
+              formType={formType}
+              handleChange={handleChange}
+              handleSubmit={handleSubmit}
+            />
+
         </div>
       )}
     </>
