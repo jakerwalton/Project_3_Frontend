@@ -2,8 +2,8 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <fieldset class="restaurant-info">
-          <legend>RESTAURANT INFO</legend>
+        <fieldset class="restaurant-info-fieldset">
+          <legend class="restaurant-info-legend">RESTAURANT INFO</legend>
           <input
             type="text"
             value={formType?.name}
@@ -315,8 +315,8 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
           out of 5
         </fieldset>
         <br />
-        <fieldset className="user-name">
-          <legend>YOUR INFO</legend>
+        <fieldset className="user-name-fieldset">
+          <legend className="user-name-legend">YOUR INFO</legend>
           <p>Your Rating:</p>
           <input
             type="number"
@@ -351,7 +351,7 @@ const Form = ({ formType, handleSubmit, handleChange }) => {
           <br />
           <br />
           <br />
-          <input type="submit" value="Add Restaurant" />
+          <input className="form-submit" type="submit" value="SUBMIT" />
         </fieldset>
       </form>
     </div>
