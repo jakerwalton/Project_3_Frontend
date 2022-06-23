@@ -68,7 +68,7 @@ function New(props) {
             <br />
             <label htmlFor="state"></label>
             <select id="state" name="state" onChange={handleChange} required>
-              <option defaultValue="" disabled>
+              <option defaultValue="State" selected disabled>
                 State
               </option>
               <option value="AL">Alabama</option>
