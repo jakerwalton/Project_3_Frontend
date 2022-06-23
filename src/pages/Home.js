@@ -12,9 +12,11 @@ function Home(props) {
         <header>
           <img src={hard} alt="HARD Logo" width="600px" />
         </header>
-        <div className="houston">
-          houston <img src={Htown} alt="Houston" width="200px" height={150} />
-        </div>
+        <Link className="houston" to="/houston">
+          <div>
+            houston <img src={Htown} alt="Houston" width="200px" height={150} />
+          </div>
+        </Link>
         <div id="new">
           <Link to="/new">
             <button className="new">Add New Restraunt</button>
