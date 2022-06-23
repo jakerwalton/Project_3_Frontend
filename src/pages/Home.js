@@ -15,6 +15,11 @@ function Home(props) {
         <div className="houston">
           houston <img src={Htown} width="200px" height={150} center />
         </div>
+        <div id="new">
+          <Link to="/new">
+            <button className="new">Add New Restraunt</button>
+          </Link>
+        </div>
         <div className="detroit">
           detroit <img src={Dcity} width="200px" height={150} center />
         </div>
@@ -27,9 +32,6 @@ function Home(props) {
           <img src={Ralcity} width="200px" height={150} center />
         </div>
       </div>
-      <Link to="/new">
-        <button id="new">Add New Restraunt</button>
-      </Link>
     </div>
   )
 }

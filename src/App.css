@@ -125,11 +125,16 @@ header {
 }
 #new {
   grid-area: new;
+}
+
+.new {
+  grid-area: new;
   border: 10px solid black;
   background-color: black;
   color: ghostwhite;
   border-radius: 5px;
   cursor: pointer;
+  margin: 70px;
 }
 #login:hover {
   transition: 0.3s;
