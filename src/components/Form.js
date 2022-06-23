@@ -1,41 +1,37 @@
-
-
-
-const Form = ({formType, handleSubmit, handleChange}) => {
-
-    return (
-        <form onSubmit={handleSubmit}>
-        <input
+const Form = ({ formType, handleSubmit, handleChange }) => {
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
         type="text"
         value={formType?.name}
         name="name"
         placeholder="name"
         onChange={handleChange}
         required
-        />
-        <br />
-        <input
+      />
+      <br />
+      <input
         type="text"
         value={formType?.address}
         name="address"
         placeholder="address"
         onChange={handleChange}
         required
-        />
-        <br />
-        <input
+      />
+      <br />
+      <input
         type="text"
         value={formType?.city}
         name="city"
         placeholder="city"
         onChange={handleChange}
         required
-        />
-        <br />
-        <label htmlFor="state"></label>
-        <select id="state" name="state" required>
-        <option defaultValue="" disabled>
-            State
+      />
+      <br />
+      <label htmlFor="state"></label>
+      <select id="state" name="state" onChange={handleChange} required>
+        <option defaultValue="State" selected disabled>
+          State
         </option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
@@ -88,211 +84,209 @@ const Form = ({formType, handleSubmit, handleChange}) => {
         <option value="WV">West Virginia</option>
         <option value="WI">Wisconsin</option>
         <option value="WY">Wyoming</option>
-        </select>
-        <br />
-        <input
+      </select>
+      <br />
+      <input
         type="url"
         value={formType?.website}
         name="website"
         placeholder="website"
         onChange={handleChange}
         required
-        />
-        <br />
-        <input
+      />
+      <br />
+      <input
         type="url"
         value={formType?.image}
         name="image"
         placeholder="image"
         onChange={handleChange}
         required
-        />
-        <br />
-        <p>Style (check all that apply)</p>
-        <input
+      />
+      <br />
+      <p>Style (check all that apply)</p>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Dine-in"
         name="Dine-in"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Dine-in">Dine-in</label>
-        <input
+      ></input>
+      <label htmlFor="Dine-in">Dine-in</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Takeout"
         name="Takeout"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Takeout">Takeout</label>
-        <input
+      ></input>
+      <label htmlFor="Takeout">Takeout</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Delivery"
         name="Delivery"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Delivery">Delivery</label>
-        <input
+      ></input>
+      <label htmlFor="Delivery">Delivery</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Foodtruck"
         name="Foodtruck"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Foodtruck">Foodtruck</label>
-        <br />
-        <p>Cuisine (check all that apply)</p>
-        <input
+      ></input>
+      <label htmlFor="Foodtruck">Foodtruck</label>
+      <br />
+      <p>Cuisine (check all that apply)</p>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Japanese"
         name="Japanese"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Japanese">Japanese</label>
-        <input
+      ></input>
+      <label htmlFor="Japanese">Japanese</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Sushi"
         name="Sushi"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Sushi">Sushi</label>
-        <input
+      ></input>
+      <label htmlFor="Sushi">Sushi</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Burgers"
         name="Burgers"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Burgers">Burgers</label>
-        <input
+      ></input>
+      <label htmlFor="Burgers">Burgers</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="BBQ"
         name="BBQ"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="BBQ">BBQ</label>
-        <input
+      ></input>
+      <label htmlFor="BBQ">BBQ</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Chinese"
         name="Chinese"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Chinese">Chinese</label>
-        <input
+      ></input>
+      <label htmlFor="Chinese">Chinese</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Mexican"
         name="Mexican"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Mexican">Mexican</label>
-        <input
+      ></input>
+      <label htmlFor="Mexican">Mexican</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="American (Traditional)"
         name="American (Traditional)"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="American (Traditional)">
-        American (Traditional)
-        </label>
-        <input
+      ></input>
+      <label htmlFor="American (Traditional)">American (Traditional)</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Tex-Mex"
         name="Tex-Mex"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Tex-Mex">Tex-Mex</label>
-        <input
+      ></input>
+      <label htmlFor="Tex-Mex">Tex-Mex</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Thai"
         name="Thai"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Thai">Thai</label>
-        <input
+      ></input>
+      <label htmlFor="Thai">Thai</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Vietnamese"
         name="Vietnamese"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Vietnamese">Vietnamese</label>
-        <input
+      ></input>
+      <label htmlFor="Vietnamese">Vietnamese</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Asian Fusion"
         name="Asian Fusion"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Asian Fusion">Asian Fusion</label>
-        <input
+      ></input>
+      <label htmlFor="Asian Fusion">Asian Fusion</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Soul Food"
         name="Soul Food"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Soul Food">Soul Food</label>
-        <input
+      ></input>
+      <label htmlFor="Soul Food">Soul Food</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Pizza"
         name="Pizza"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Pizza">Pizza</label>
-        <input
+      ></input>
+      <label htmlFor="Pizza">Pizza</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Ethiopian"
         name="Ethiopian"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Ethiopian">Ethiopian</label>
-        <input
+      ></input>
+      <label htmlFor="Ethiopian">Ethiopian</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Seafood"
         name="Seafood"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Seafood">Seafood</label>
-        <input
+      ></input>
+      <label htmlFor="Seafood">Seafood</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Korean"
         name="Korean"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Korean">Korean</label>
-        <input
+      ></input>
+      <label htmlFor="Korean">Korean</label>
+      <input
         type="checkbox"
         value={formType?.style}
         id="Mediterranean"
         name="Mediterranean"
         onChange={handleChange}
-        ></input>
-        <label htmlFor="Mediterranean">Mediterranean</label>
-        <br />
-        <br />
-        <input
+      ></input>
+      <label htmlFor="Mediterranean">Mediterranean</label>
+      <br />
+      <br />
+      <input
         type="text"
         value={formType?.user}
         name="user"
         placeholder="your name"
         onChange={handleChange}
-        />
-        <br />
-        <p>Your Rating:</p>
-        <input
+      />
+      <br />
+      <p>Your Rating:</p>
+      <input
         type="number"
         value={formType?.userRating}
         name="userRating"
@@ -302,19 +296,20 @@ const Form = ({formType, handleSubmit, handleChange}) => {
         min="0"
         max="5"
         required
-        />{" "}
-        out of 5
-        <br />
-        <p>Your comments:</p>
-        <textarea
+      />{" "}
+      out of 5
+      <br />
+      <p>Your comments:</p>
+      <textarea
         name="comments"
+        value={formType?.comments}
         placeholder="Their tacos are amazing!"
         onChange={handleChange}
         required
-        ></textarea>
-        <br />
-        <p>Google Rating (optional):</p>
-        <input
+      ></textarea>
+      <br />
+      <p>Google Rating (optional):</p>
+      <input
         type="number"
         value={formType?.googleRating}
         name="googleRating"
@@ -323,11 +318,11 @@ const Form = ({formType, handleSubmit, handleChange}) => {
         onChange={handleChange}
         min="0"
         max="5"
-        />{" "}
-        out of 5
-        <br />
-        <p>Yelp Rating (optional):</p>
-        <input
+      />{" "}
+      out of 5
+      <br />
+      <p>Yelp Rating (optional):</p>
+      <input
         type="number"
         value={formType?.yelpRating}
         name="yelpRating"
@@ -336,14 +331,14 @@ const Form = ({formType, handleSubmit, handleChange}) => {
         onChange={handleChange}
         min="0"
         max="5"
-        />{" "}
-        out of 5
-        <br />
-        <br />
-        <br />
-        <input type="submit" value="Submit" />
-        </form>
-    )
-};
+      />{" "}
+      out of 5
+      <br />
+      <br />
+      <br />
+      <input type="submit" value="Add Restaurant" />
+    </form>
+  )
+}
 
-export default Form;
+export default Form
