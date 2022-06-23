@@ -45,8 +45,14 @@ function Show(props) {
           className="
         show-card-image"
         ></img>
+        <p>{restaurant?.address}</p>
+        <p>{restaurant?.city}</p>
+        <p>{restaurant?.state}</p>
+        <p>{restaurant?.sstyle}</p>
         <h3>{restaurant?.cuisine.join(" / ")}</h3>
-        <h4>{restaurant?.userRating} / 5</h4>
+        <h4>Users Rating: {restaurant?.userRating} / 5</h4>
+        <h4>Google Rating: {restaurant?.googleRating} / 5</h4>
+        <h4>Yelp Reviews: {restaurant?.yelpRating} / 5</h4>
         <p>"{restaurant?.comments}"</p>
         <p>Reviewed by: {restaurant?.user}</p>
         {props.user && (
