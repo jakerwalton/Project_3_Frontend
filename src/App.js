@@ -103,7 +103,11 @@ function App() {
         </Route>
 
         <Route path="/new">
-          <New restaurant={restaurant} createRestaurant={createRestaurant} />
+          <New
+            user={user}
+            restaurant={restaurant}
+            createRestaurant={createRestaurant}
+          />
         </Route>
 
         <Route
