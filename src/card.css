@@ -7,7 +7,8 @@ background-position: center;
 
 .show-h1,
 .city-h1,
-.new-h1{
+.new-h1,
+.new-h3{
     color:whitesmoke;
 }
 
@@ -31,21 +32,21 @@ background-position: center;
 .restaurant-card {
     max-height: 700px;
     max-width: 200px;
-    background-color:#8becad;
+    background-color:#8becadb6;
     height:500px;
     width: 200px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(246, 242, 242, 0.4);
     transition: 0.3s;
     overflow-wrap:break-word;
  }
 .edit-card {
     margin-top: 50px;
-    background-color:#8becad;
+    background-color:#717873;
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) inset;
     transition: 0.3s;
     overflow-wrap:break-word;
  }
@@ -92,7 +93,7 @@ background-position: center;
   }
   .show-card {
     margin-top: 50px;
-    background-color:#dcdcdc;
+    background-color:#dcdcdc82;
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -101,10 +102,10 @@ background-position: center;
     overflow-wrap:break-word;
  }
   .show-card-image {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 20%;
+    max-height: 20%;
     height: 50%;
-    width: 90%;
+    width: 50%;
     /* border: 1px solid black; */
     border-radius: 10px;
     z-index: -1;

@@ -24,8 +24,8 @@ h1 {
 }
 
 header {
-  border: 3px solid #15ab5c;
-  background-color: #15ab5c;
+  border: 3px solid #15ab5b;
+  background-color: #8becadb6;
   grid-area: header;
   border-radius: 20px;
   width: 100%;
@@ -198,11 +198,15 @@ header {
 
 .houston {
   grid-area: houston;
-  background-color: #8becad;
+  background-color: #8becadb6;
   width: 245px;
   height: 300px;
   border-radius: 20px;
   padding-top: 30px;
+}
+.houston:hover{
+  box-shadow: 0 4px 8px 0 #e4e4e4da;
+
 }
 .houston:link {
   color: black;
@@ -215,12 +219,16 @@ header {
 
 .detroit {
   grid-area: detroit;
-  background-color: #8becad;
+  background-color: #8becadb6;
   width: 245px;
   height: 300px;
   border-radius: 20px;
   /* margin-right: 100px; */
   padding-top: 30px;
+}
+.detroit:hover{
+  box-shadow: 0 4px 8px 0 #e4e4e4da;
+
 }
 .detroit:link {
   color: black;
@@ -232,11 +240,15 @@ header {
 }
 .austin {
   grid-area: austin;
-  background-color: #8becad;
+  background-color: #8becadb6;
   width: 245px;
   height: 300px;
   border-radius: 20px;
   padding-top: 30px;
+}
+.austin:hover{
+  box-shadow: 0 4px 8px 0 #e4e4e4da;
+
 }
 .austin:link {
   color: black;
@@ -248,12 +260,16 @@ header {
 }
 .raleigh {
   grid-area: raleigh;
-  background-color: #8becad;
+  background-color: #8becadb6;
   width: 245px;
   height: 300px;
   border-radius: 20px;
   padding-top: 30px;
   /* margin-right: 10px; */
+}
+.raleigh:hover{
+  box-shadow: 0 4px 8px 0 #e4e4e4da;
+
 }
 .raleigh:link {
   color: black;

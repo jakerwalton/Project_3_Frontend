@@ -39,7 +39,7 @@ function New(props) {
       <>
         <div className="new-container">
           <h1 className="new-h1">New Restaurant Page</h1>
-          <h3>Add a New Restaurant</h3>
+          <h3 className="new-h3">Add a New Restaurant</h3>
           <div className="new-form-container">
             <section>
               <Form
