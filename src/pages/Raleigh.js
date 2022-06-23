@@ -53,8 +53,8 @@ function Raleigh(props) {
   return (
     <div>
       <h1 className="city-h1">Raleigh</h1>
-      <div className="raleigh-header">
-        {/* <img src={Ralcity} alt="city pic" className="pic" /> */}
+      <div>
+        <img src={Ralcity} alt="city pic" className="pic" />
       </div>
 
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
