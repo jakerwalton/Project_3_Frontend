@@ -15,12 +15,12 @@ firebase.initializeApp(config)
 const auth = firebase.auth()
 const provider = new firebase.auth.GoogleAuthProvider()
 
-function logout() {
-  return auth.signOut()
-}
-
 function login() {
   return auth.signInWithPopup(provider)
+}
+
+function logout() {
+  return auth.signOut()
 }
 
 export { auth, login, logout }
