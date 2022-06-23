@@ -143,12 +143,16 @@ header {
 }
 .restaurant-info-fieldset {
   color: ghostwhite;
+  width: 100vh;
 }
 .user-name-fieldset {
   color: ghostwhite;
 }
 .form {
   background-image: linear-gradient(#15ab5c, #8becad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form-submit {
   border: 10px solid black;
