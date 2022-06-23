@@ -35,13 +35,7 @@ function Houston(props) {
         <h4>{houston.userRating} / 5</h4>
         <p>Reviewed by: {houston.user}</p>
         {/* <p>{restaurant.comments}</p> */}
-        <div id="weblink">
-          <li>
-            <a href={houston.website} id="restweb-H">
-              {houston.name}
-            </a>
-          </li>
-        </div>
+       
       </div>
     ))
   }
