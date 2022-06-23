@@ -20,7 +20,6 @@ function Raleigh(props) {
     const raleigh = restaurants.filter(
       (restaurant) => restaurant.city === "Raleigh"
     )
-    console.log(raleigh)
 
     return raleigh.map((raleigh, index) => (
       <div key={index} className="restaurant-card">
@@ -54,8 +53,8 @@ function Raleigh(props) {
   return (
     <div>
       <h1 className="city-h1">Raleigh</h1>
-      <div>
-        <img src={Ralcity} alt="city pic" className="pic" />
+      <div className="raleigh-header">
+        {/* <img src={Ralcity} alt="city pic" className="pic" /> */}
       </div>
 
       <div className="card-container">{restaurants ? loaded() : loading()}</div>
