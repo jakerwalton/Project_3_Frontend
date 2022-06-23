@@ -19,7 +19,6 @@ function Detroit(props) {
     const detroit = restaurants.filter(
       (restaurant) => restaurant.city === "Detroit"
     )
-    console.log(detroit)
 
     return detroit.map((detroit, index) => (
       <div key={index} className="restaurant-card">
