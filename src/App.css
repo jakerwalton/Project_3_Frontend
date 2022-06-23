@@ -165,6 +165,12 @@ header {
   border-radius: 20px;
   margin-left: 180px;
 }
+.houston:link {
+  color: black;
+}
+.houston:visited {
+  color: black;
+}
 
 .detroit {
   grid-area: detroit;
@@ -174,7 +180,12 @@ header {
   border-radius: 20px;
   margin-right: 180px;
 }
-
+.detroit:link {
+  color: black;
+}
+.detroit:visited {
+  color: black;
+}
 .austin {
   grid-area: austin;
   background-color: #8becad;
@@ -182,7 +193,12 @@ header {
   height: 300px;
   border-radius: 20px;
 }
-
+.austin:link {
+  color: black;
+}
+.austin:visited {
+  color: black;
+}
 .raleigh {
   grid-area: raleigh;
   background-color: #8becad;
@@ -190,7 +206,12 @@ header {
   height: 300px;
   border-radius: 20px;
 }
-
+.raleigh:link {
+  color: black;
+}
+.raleigh:visited {
+  color: black;
+}
 .show-h1,
 .city-h1,
 .new-h1 {
