@@ -154,6 +154,12 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.showForm {
+  visibility: show;
+}
+.hideForm {
+  visibility: hidden;
+}
 .form-submit {
   border: 10px solid black;
   background-color: black;
