@@ -19,11 +19,13 @@ function Home(props) {
             See exciting restaurants in Houston!
           </div>
         </Link>
+        {props.user && (
         <div id="new">
           <Link to="/new">
             <button className="new">Add New Restaurant</button>
           </Link>
         </div>
+        )}
         <Link className="detroit" to="/detroit">
           <div>
             <img src={Dcity} alt="Detroit" width="200px" height={150} />
