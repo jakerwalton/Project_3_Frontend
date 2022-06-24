@@ -31,7 +31,7 @@ The H.A.R.D. Restaurant Tracker provides users the ability to view recommended r
 - Users can view recommended restaurants in Houston, TX, Austin, TX, Raleigh, NC, and Detroit, MI
 - Users can view basic information regarding each of the recommended restaurants including (address, phone, website, Yelp rating, Google rating, etc.) in additional to comments provided by the contributor
 - Authenticated users can add their own recommendations
-- Authenticated users can also edit or delete any of their previous contributions
+- Authenticated users can also edit or delete any previous contributions
 
 <!-- ## Whiteboard Images
 * All Sketches are on notepad -->
@@ -54,6 +54,7 @@ The H.A.R.D. Restaurant Tracker provides users the ability to view recommended r
 
 ## <a name="nextsteps"></a>Project Next Steps
 
+- Authenticated users can only edit or delete any their previous contributions
 - Users have the ability to view a personalized dashboard containing their individual contributions as well as their starred/favorited posts
 
 ## <a name="deployment"></a>Deployed Link
