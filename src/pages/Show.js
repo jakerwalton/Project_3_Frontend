@@ -54,6 +54,13 @@ function Show(props) {
         <h4>Google Rating: {restaurant?.googleRating} / 5</h4>
         <h4>Yelp Reviews: {restaurant?.yelpRating} / 5</h4>
         <p>"{restaurant?.comments}"</p>
+        <div id="weblink">
+          <li>
+            <a href={restaurant?.website} id="restweb-h">
+              {restaurant?.name}
+            </a>
+          </li>
+        </div>
         <p>Reviewed by: {restaurant?.user}</p>
         {props.user && (
           <button onClick={() => handleRemoveRestaurant(restaurant?._id)}>
