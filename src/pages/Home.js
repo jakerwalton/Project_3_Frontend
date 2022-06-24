@@ -21,7 +21,7 @@ function Home(props) {
         </Link>
         <div id="new">
           <Link to="/new">
-            <button className="new">Add New Restraunt</button>
+            <button className="new">Add New Restaurant</button>
           </Link>
         </div>
         <Link className="detroit" to="/detroit">
